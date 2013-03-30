@@ -149,7 +149,18 @@ describe 'deep_eql' do
 } to be deep_eql with {
     :foo => "bar",
     :baz => "fnar"
-}'
+}
+Diff between old and new is:
+@@ -2,6 +2,2 @@
+-     :foo => "bar",
+-     :baz => "quux",
+-    :foo2 => "bar",
+-    :baz2 => "quux",
+-    :foo3 => "bar",
+-    :baz3 => "quux"
++    :foo => "bar",
++    :baz => "fnar"
+'
     end
 end
 
